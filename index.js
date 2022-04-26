@@ -9,8 +9,6 @@ var challenge_2 = (array, sum) => {
             continue;
         } else if (array.includes(pair, array.indexOf(i) + 1)) {
             let index = []
-            // console.log(array.indexOf(pair,array.indexOf(i)))
-            // console.log(array.indexOf(i))
             result = [array.indexOf(i), array.indexOf(pair, array.indexOf(i) + 1)]
             break;
         } else {
@@ -18,7 +16,7 @@ var challenge_2 = (array, sum) => {
         }
     }
     console.log(`Input : nums = [${array}], sum = ${sum}`)
-    if (typeof (result) == 'string') {
+    if (typeof (result) === 'string') {
         console.log(`Output : ${result}`)
         console.log(`Explanation : There are no two numbers that add up to ${sum}`)
     } else {
